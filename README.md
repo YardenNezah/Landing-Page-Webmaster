@@ -1,8 +1,9 @@
 # Landing-Page-Webmaster
 
-#Desktop:
-![screencapture-file-C-Users-user-Desktop-Landing-Page-Webmaster-index-html-2021-12-15-18_02_56](https://user-images.githubusercontent.com/74673812/146221880-6f8ee60e-b88c-42b5-a84b-0afa2d20548d.png)
+# Desktop:
+![‏‏screencapture-file-C-Users-user-Desktop-Landing-Page-Webmaster-index-html-2021-12-20-11_32_04 - עותק](https://user-images.githubusercontent.com/74673812/146747196-1b0a2110-6b9e-4976-8333-26348dd271e6.png)
 
 
-#Mobile:
-![screencapture-file-C-Users-user-Desktop-Landing-Page-Webmaster-index-html-2021-12-15-18_06_26 (1)](https://user-images.githubusercontent.com/74673812/146222030-b3ce2ec5-d352-479d-b8fb-6279ce32e7ba.png)
+
+# Mobile:
+![screencapture-file-C-Users-user-Desktop-Landing-Page-Webmaster-index-html-2021-12-20-11_52_41](https://user-images.githubusercontent.com/74673812/146748082-ec59e840-3b53-4f22-b6c7-cb04593c779c.png)
