@@ -337,68 +337,8 @@ input {
     position: relative;
 }
 
-.how-to-div {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    height: 600px;
-    left: 150px;
-    bottom: 40px;
-    width: 900px;
-    position: relative;
-}
-
-.how-to {
-    background-color:  var(--orange);
-    border-left: 5px solid white;
-    border-right: 5px solid white;
-    box-shadow: 8px 8px 20px var(--shadow);
-    width: 252px;
-    height: 145.4922px;
-    transform: rotate(90deg);
-}
-
-.how-to-content {
-    width: 140px;
-    transform: rotate(-90deg);
-    z-index: 1;
-}
-
-.how-to-header {
-    margin-right: 150px;
-    margin-top: 62px;
-    width: 170px;
-}
-
-.content {
-    margin-left: 120px;
-    top: 10px;
-    bottom: 25px;
-    right: 10px;
-    position: absolute;
-}
-
-.how-to::before, .how-to::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-left: 126px solid transparent;
-    border-right: 126px solid transparent;
-}
-
-.how-to::before {
-    top: -72.7461px;
-    border-bottom: 72.7461px solid var(--orange);
-}
-
-.how-to::after {
-    bottom: -72.7461px;
-    border-top: 72.7461px solid var(--orange);
-}
-
 .make {
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 footer {
@@ -415,6 +355,76 @@ footer {
     font-weight: 300;
 }
 
+.dilate{
+    filter: url("#dilate_shape");
+}
+
+ .how-to-bg {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background: radial-gradient(closest-side, rgb(202, 202, 202) 70%, white);
+    width: 360px;
+    height: 330px;
+} 
+
+.how-to {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background-color: white;
+    position: relative;
+    width: 285px;
+    height: 266px;
+    top: 10%;
+    margin-left: 35px;
+    margin-top: 52px;
+}
+
+.how-to:before {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background: var(--orange);
+    position: absolute;
+    content: '';
+    z-index: -1;
+    width: 268px;
+    height: 254px;
+    right: 3%;
+    top: 2%;
+}
+
+.how-to-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 70%;
+    bottom: 170px;
+    left: 11%;
+    padding-bottom: 250px;
+}
+
+.how-to-item {
+    filter: url('#goo');
+}
+
+svg {
+    visibility: hidden; 
+    position: absolute;
+}
+
+.how-to-content {
+    width: 150px;
+    position: relative;
+    left: 25%;
+    top: 25%;
+    font-weight: 300;
+}
+
+.how-to-header {
+    width: 200px;
+    position: relative;
+    left: 15%;
+    top: 20%;
+    font-weight: 600;
+}
 
 /*Media Queries For a Responsive Design: */
 
@@ -488,24 +498,26 @@ footer {
         width: 600px;
         left: 24%;
     }
-    .how-to-div {
-        height: 500px;
-        left: 20px;
-        width: 820px;
-        bottom: 5px;
+    .how-to-bg {
+        width: 324px;
+        height: 297px;
     }
     .how-to {
-        width: 232px;
-        height: 125.4922px;
+        width: 255px;
+        height: 239px;
+    }
+    .how-to:before {
+        width: 241px;
+        height: 228px;
+    }
+    .how-to-content {
+        width: 100px;
+        top: 5%;
     }
     .how-to-header {
-        margin-right: 130px;
-        margin-top: 45px;
+        left: 25%;
+        top: 4%;
         width: 100px;
-    }
-    .how-to::before, .how-to::after {
-        border-left: 116px solid transparent;
-        border-right: 116px solid transparent;
     }
     .second-form {
         width: 600px;
@@ -562,26 +574,30 @@ footer {
     .learning-btn {
         right: 40%;
     }
-    .how-to-div {
-        width: 720px;
-        top: 16px;
+    .how-to-bg {
+        width: 259px;
+        height: 237px;
     }
     .how-to {
-        width: 212px;
-        height: 105.4922px;
+        width: 204px;
+        height: 191px;
+        right: 3%;
     }
-    .how-to-header {
-        margin-top: 35px;
-    }
-    .how-to::before, .how-to::after {
-        border-left: 106px solid transparent;
-        border-right: 106px solid transparent;
+    .how-to:before {
+        width: 192px;
+        height: 182px;
     }
     .footer-content {
         width: 505px;
     }
 }
 @media only screen and (max-width: 700px) {
+    h1 {
+        left: 13%;
+    }
+    .first-form {
+        left: 25%;
+    }
     .agree-privacy {
         left: 55px;
     }
@@ -611,23 +627,17 @@ footer {
     .arrows {
         display: none;
     }
-    .how-to-div {
-        grid-template-rows: 33% 33% 33%;
-        grid-template-columns: 100%;
-        height: 700px;
-        width: 400px;
+    .how-to-container {
+        flex-direction: column;
+        left: 30%;
+        margin-top: 150px;
     }
     .make {
-        margin-top: 1px;
-    }
-    .how-to {
-        margin-top: 10%;
-        margin-left: 25%;
+        margin-top: 0;
     }
     .second-form {
         width: 300px;
         height: 470px;
-        margin-top: 30%;
         margin-left: 15%;
     }
     footer {
@@ -662,11 +672,6 @@ footer {
         width: 170px;
         height: 18px;
         padding: 8px;
-    }
-    .how-to-div {
-        left: 15%;
-        bottom: 50%;
-        padding-top: 20px;
     }
     footer {
         height: 190px;
