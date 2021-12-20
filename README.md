@@ -4,7 +4,6 @@
 
 ![desktop (2)](https://user-images.githubusercontent.com/74673812/146748521-8409dc8a-3726-4c5e-bc23-efade5d2322b.png)
 
-![desktop (2)](https://user-images.githubusercontent.com/74673812/146748691-8de00038-401a-4fa5-87bc-dab6e2dccaa7.png)
 
 
 # Mobile:
