@@ -248,7 +248,7 @@ input {
 
 .learning-btn {
     position: absolute;
-    margin-top: 58px;
+    margin-top: 80px;
     right: 43%;
 }
 
@@ -341,20 +341,6 @@ input {
     margin-top: 120px;
 }
 
-footer {
-    background-color: var(--brown);
-    color: white;
-    height: 100px;
-    padding: 50px;
-    bottom: 0;
-}
-
-.footer-content {
-    width: 905px;
-    margin-left: 100px;
-    font-weight: 300;
-}
-
 .dilate{
     filter: url("#dilate_shape");
 }
@@ -425,6 +411,21 @@ svg {
     top: 20%;
     font-weight: 600;
 }
+
+footer {
+    background-color: var(--brown);
+    color: white;
+    height: 100px;
+    padding: 50px;
+    bottom: 0;
+}
+
+.footer-content {
+    width: 905px;
+    margin-left: 100px;
+    font-weight: 300;
+}
+
 
 /*Media Queries For a Responsive Design: */
 
@@ -615,7 +616,7 @@ svg {
     }
     .material-div {
         flex-direction: column;
-        margin-left: 30%;
+        margin-left: 34%;
     }
     .limited-header {
         left: 10%;
@@ -623,6 +624,7 @@ svg {
     }
     .learning-btn {
         left: 35%;
+        margin-top: 50px;
     }
     .arrows {
         display: none;
@@ -636,9 +638,10 @@ svg {
         margin-top: 0;
     }
     .second-form {
-        width: 300px;
-        height: 470px;
-        margin-left: 15%;
+        width: 320px;
+        height: 490px;
+        margin-left: 13%;
+        bottom: 200px;
     }
     footer {
         height: 150px;
@@ -646,6 +649,7 @@ svg {
     }
     .footer-content {
         width: 405px;
+        margin-left: 120px;
     }
 }
 
